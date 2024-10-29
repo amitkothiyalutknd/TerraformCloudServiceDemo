@@ -18,11 +18,11 @@ provider "aws" {
 }
 
 resource "random_id" "randID" {
-  byte_length = 10
+  byte_length = 8
 }
 
 resource "aws_s3_bucket" "tfBucket" {
-  bucket = "terraformcloud-${random_id.randID.hex}"
+  bucket = "tfcloud-${random_id.randID.hex}"
 }
 
 # resource "aws_s3_bucket" "bucketData" {
