@@ -18,7 +18,7 @@ provider "aws" {
 }
 
 resource "random_id" "randID" {
-  byte_length = 10
+  byte_length = 8
 }
 
 resource "aws_s3_bucket" "tfBucket" {
