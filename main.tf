@@ -22,7 +22,7 @@ resource "random_id" "randID" {
 }
 
 resource "aws_s3_bucket" "tfBucket" {
-  bucket = "tf-loud-${random_id.randID.hex}"
+  bucket = "terraform-${random_id.randID.hex}"
 }
 
 # resource "aws_s3_bucket" "bucketData" {
